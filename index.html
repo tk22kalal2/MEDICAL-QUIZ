@@ -156,6 +156,21 @@ footer {
   .step-section, .features, .media-section {
     padding: 20px;
   }
+
+  .media-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .media-item {
+    width: 100%; /* This ensures it takes the full width */
+    text-align: center;
+  }
+
+  .media-item img {
+    max-width: 100%;
+    height: auto; /* Ensures the height adjusts proportionally */
+  }
   
   nav ul {
     flex-direction: column;
