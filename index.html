@@ -129,23 +129,10 @@ h2 {
 
 .media-item iframe, .media-item img {
   width: 100%;
-  height: auto; /* Maintains aspect ratio */
   max-width: 100%;
+  height: auto;
   border-radius: 8px;
   display: block;
-}
-
-/* Ensure images don’t break on small screens */
-@media (max-width: 768px) {
-  .media-section {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .media-item {
-    max-width: 100%;
-    text-align: center;
-  }
 }
 
 footer {
@@ -156,6 +143,29 @@ footer {
   border-radius: 15px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .header {
+    padding: 25px 15px;
+  }
+  
+  .step-section, .features, .media-section {
+    padding: 20px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav li {
+    margin: 10px 0;
+  }
+}
   </style>
 </head>
 <body>
